@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    background: blueviolet;
+}
+
+.navbar{
+    background: rgb(0, 0, 230);
+    padding: 15px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-weight: bold;
+}
+
+.logo{
+    color: white; 
+    text-decoration: none; 
+    font-size: 25px;
+}
+
+.menu{
+    list-style: none; 
+    display: flex; 
+    gap: 25px;
+}
+
+.menu a{
+    color: white; 
+    text-decoration: none;
+}
+
+.list{
+    padding: 10px;
+}
+
+.tombol{
+  display: none;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.icon{
+    width: 2em;
+    border-radius: 5px;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.article{
+    text-align: center;
+}
+
+.masamin{
+    border-radius: 20px;
+}
+
+.card{
+    height: 100vh;
+    padding: 70px;
+    text-align: center;
+}
+@media (max-width: 768px){
+    .container{
+        height: 100dvh;
+    }
+
+    .card{
+        padding-bottom: 300dvh;
+    }
+
+    .tombol {
+        display: block;
+    }
+
+    .menu {
+        position: absolute;
+        top: 60px;
+        left: -100%;
+        flex-direction: column;
+        background: rgb(0, 0, 230);
+        width: 100%;
+        padding: 20px;
+        transition: 0.3s;
+      }
+
+    .menu.buka {
+        left: 0;
+    }
+}
